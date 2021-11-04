@@ -1,0 +1,53 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#button{
+    width: 80%;
+    margin-left: 10px;
+}
+
+.loginform{
+    height: 500%;
+    border: 5px;
+    border-radius: 5px;
+    margin-top: 200px;
+    margin-left: 30%;
+    position: absolute;
+    top: 40%;
+    color: rgb(0, 0, 0);
+    border: 2px solid white;
+    padding: 40px;
+    background-color: #ffffff!important;
+
+}
+
+body{  
+    /* background: url(/images/loginbg.jpg) no-repeat;
+    background-size: cover;  */
+    background-color: #b8c6db;
+background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+ /* Full height */
+ height: 100%;
+
+ /* Center and scale the image nicely */
+ background-position: center;
+ /* background-repeat: no-repeat; */
+ background-size: cover;
+
+}
+.loginform h1{
+    font-size: 55px;
+}   
+.loginform h3{
+    margin-top: 20px;
+
+}
+.loginform button{
+    font-weight: bold;
+}
+.loginform input{
+    border-radius: 10px;
+    width: 80%;
+}

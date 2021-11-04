@@ -1,0 +1,40 @@
+*{
+    font-family: 'Times New Roman', Times, serif;   
+    
+}
+.body{
+        background-color: #e3e3e3 
+}
+
+.container{
+    border: 1px solid rgb(92, 8, 8);
+}
+
+
+
+.content p{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 25px;
+}
+.content h1{
+    font-family: 'Times New Roman', Times, serif;
+        font-size: 80px
+
+
+
+}
+
+.card {
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .tab1cards {
+    display: flex;
+    flex-direction: row;
+  }
+.card{
+    width: 350px;
+    border-radius: 200px;
+
+}  
