@@ -19,6 +19,7 @@ function check(){
 
         if(regexp.test(email.value)){
             error.innerHTML ="valid";
+            error.style.color="green"
             email.style.border = "2px solid green";
             return pcheck();
             
