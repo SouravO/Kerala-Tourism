@@ -1,3 +1,14 @@
+// let show = document.getElementById("shpass")
+function shpass(){
+    var p = document.getElementById("pd");
+    if (p.type == "password") {
+      p.type = "text";
+    } else {
+      p.type = "password";
+    }
+}
+
+
 let email = document.getElementById("mail");
 let error = document.getElementById("errorm")
 
@@ -50,7 +61,7 @@ function pcheck(){
 //password
 let pass = document.getElementById("pd")
 function checkpass(){
-    let strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
+    let strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})");
     if(strongRegex.test(pass.value)){
         
         alert("done")
