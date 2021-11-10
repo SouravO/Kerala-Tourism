@@ -73,17 +73,21 @@
     
 
        <h1>Login Form</h1>
-       <form action="">
+       <form action="Foundation.hmtl" onsubmit="return check()" >
 
                <h3>Username</h3>
-                <input type="text" placeholder="Username"><br><br>
+                <input type="text" id="mail"  placeholder="Username"><br><br>
+                <label for="error" id="error"></label>
                 <h3>Password</h3>
-                <input type="password" name="password" id="" placeholder="Password">
-                <br><br><button type="submit" id="button">Login</button>
+                <input type="password"  name="password" id="pass" placeholder="Password">
+                <br>
+                <br><br><button type="submit" value="LOGIN" id="button" onclick="ck()">Login</button>
            
             </div>
        </form>
    </div>
-</body>
+   <script src="login.js"></script>
+  </body>
+
 
 </html>
