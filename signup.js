@@ -11,10 +11,11 @@ function check(){
 
         }
         else{
-            error.innerHTML= "invalid";
-            error.style = "red";
+            error.innerHTML= "Invalid !!";
+            error.style.color = "red";
+            email.style.border = " 2px solid red "
             return false;
         }
-
+        
 
 }

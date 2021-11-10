@@ -22,9 +22,6 @@ function check(){
     
     }
         
-function validate(){
-    
-}   
 
 
 
