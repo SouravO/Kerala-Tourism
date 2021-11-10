@@ -81,8 +81,10 @@
           </div>
           <div class="form-group col-md-6">
             <label for="inputPassword4">Password</label>
-            <input type="password" class="form-control" id="pd" placeholder="Password">
+            <input type="password" class="form-control" id="pd" onkeyup="return chPass();" placeholder="Password">
             <input type="checkbox" onclick="shpass()" id=""><label for="">Show Password</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="" id="strength">Type Password</label>
           </div>
         </div>
         <div class="form-group">

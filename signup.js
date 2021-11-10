@@ -44,7 +44,7 @@ function pcheck(){
   if(phoneno.test(num.value))
         {
         num.style.border = "2px solid green"
-      return checkpass();
+      return chPass();
         }
       else
         {
@@ -60,18 +60,39 @@ function pcheck(){
 
 
 //password
-let pass = document.getElementById("pd")
-function checkpass(){
-    let strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})");
-    if(strongRegex.test(pass.value)){
+// let pass = document.getElementById("pd")
+// function checkpass(){
+//     let strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})");
+//     if(strongRegex.test(pass.value)){
         
-        alert("done")
-        return true;
-    }
-    else{
-        alert("false")
-        return false;
+//         alert("done")
+//         return true;
+//     }
+//     else{
+//         alert("false")
+//         return false;
 
+//         }
+
+//     }
+
+function chPass(){
+    var strength = document.getElementById('strength');
+        var strongRegex = new RegExp("^(?=.{14,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*$", "g");
+        var mediumRegex = new RegExp("^(?=.{10,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g");
+        var enoughRegex = new RegExp("(?=.{8,}).*", "g");
+        let p = document.getElementById("pd")
+
+        
+        if (p.value.length == 0) {
+            strength.innerHTML = 'Type Password';
+        } else if (false == enoughRegex.test(p.value)) {
+            strength.innerHTML = 'More Characters';
+        } else if (strongRegex.test(p.value)) {
+            strength.innerHTML = '<span style="color:green">Strong!</span>';
+        } else if (mediumRegex.test(p.value)) {
+            strength.innerHTML = '<span style="color:orange">Medium!</span>';
+        } else {
+            strength.innerHTML = '<span style="color:red">Weak!</span>';
         }
-
     }
